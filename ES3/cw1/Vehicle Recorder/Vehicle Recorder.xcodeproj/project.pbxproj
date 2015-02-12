@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CE1942C61A8BFE480052E41D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1942C51A8BFE480052E41D /* main.m */; };
-		CE1942C91A8BFE480052E41D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1942C81A8BFE480052E41D /* AppDelegate.m */; };
-		CE1942CC1A8BFE480052E41D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1942CB1A8BFE480052E41D /* FirstViewController.m */; };
-		CE1942CF1A8BFE480052E41D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1942CE1A8BFE480052E41D /* SecondViewController.m */; };
-		CE1942D21A8BFE480052E41D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1942D01A8BFE480052E41D /* Main.storyboard */; };
 		CE1942D41A8BFE480052E41D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1942D31A8BFE480052E41D /* Images.xcassets */; };
-		CE1942D71A8BFE480052E41D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1942D51A8BFE480052E41D /* LaunchScreen.xib */; };
 		CE1942E31A8BFE480052E41D /* Vehicle_RecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1942E21A8BFE480052E41D /* Vehicle_RecorderTests.m */; };
+		CE1942EF1A8C058F0052E41D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1942EE1A8C058F0052E41D /* AppDelegate.m */; };
+		CE1942F21A8C0FC40052E41D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1942F11A8C0FC40052E41D /* Storyboard.storyboard */; };
+		CE1942F71A8C1A230052E41D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1942F61A8C1A230052E41D /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,18 +29,14 @@
 		CE1942C01A8BFE480052E41D /* Vehicle Recorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vehicle Recorder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1942C41A8BFE480052E41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1942C51A8BFE480052E41D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE1942C71A8BFE480052E41D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CE1942C81A8BFE480052E41D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE1942CA1A8BFE480052E41D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		CE1942CB1A8BFE480052E41D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		CE1942CD1A8BFE480052E41D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		CE1942CE1A8BFE480052E41D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		CE1942D11A8BFE480052E41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE1942D31A8BFE480052E41D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CE1942D61A8BFE480052E41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CE1942DC1A8BFE480052E41D /* Vehicle RecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vehicle RecorderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1942E11A8BFE480052E41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1942E21A8BFE480052E41D /* Vehicle_RecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vehicle_RecorderTests.m; sourceTree = "<group>"; };
+		CE1942ED1A8C058F0052E41D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Vehicle Recorder/AppDelegate.h"; sourceTree = "<group>"; };
+		CE1942EE1A8C058F0052E41D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Vehicle Recorder/AppDelegate.m"; sourceTree = "<group>"; };
+		CE1942F11A8C0FC40052E41D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		CE1942F61A8C1A230052E41D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +60,8 @@
 		CE1942B71A8BFE480052E41D = {
 			isa = PBXGroup;
 			children = (
+				CE1942ED1A8C058F0052E41D /* AppDelegate.h */,
+				CE1942EE1A8C058F0052E41D /* AppDelegate.m */,
 				CE1942C21A8BFE480052E41D /* Vehicle Recorder */,
 				CE1942DF1A8BFE480052E41D /* Vehicle RecorderTests */,
 				CE1942C11A8BFE480052E41D /* Products */,
@@ -84,15 +80,8 @@
 		CE1942C21A8BFE480052E41D /* Vehicle Recorder */ = {
 			isa = PBXGroup;
 			children = (
-				CE1942C71A8BFE480052E41D /* AppDelegate.h */,
-				CE1942C81A8BFE480052E41D /* AppDelegate.m */,
-				CE1942CA1A8BFE480052E41D /* FirstViewController.h */,
-				CE1942CB1A8BFE480052E41D /* FirstViewController.m */,
-				CE1942CD1A8BFE480052E41D /* SecondViewController.h */,
-				CE1942CE1A8BFE480052E41D /* SecondViewController.m */,
-				CE1942D01A8BFE480052E41D /* Main.storyboard */,
+				CE1942F01A8C0F0D0052E41D /* stories */,
 				CE1942D31A8BFE480052E41D /* Images.xcassets */,
-				CE1942D51A8BFE480052E41D /* LaunchScreen.xib */,
 				CE1942C31A8BFE480052E41D /* Supporting Files */,
 			);
 			path = "Vehicle Recorder";
@@ -122,6 +111,15 @@
 				CE1942E11A8BFE480052E41D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE1942F01A8C0F0D0052E41D /* stories */ = {
+			isa = PBXGroup;
+			children = (
+				CE1942F11A8C0FC40052E41D /* Storyboard.storyboard */,
+				CE1942F61A8C1A230052E41D /* LaunchScreen.xib */,
+			);
+			path = stories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1942D21A8BFE480052E41D /* Main.storyboard in Resources */,
-				CE1942D71A8BFE480052E41D /* LaunchScreen.xib in Resources */,
 				CE1942D41A8BFE480052E41D /* Images.xcassets in Resources */,
+				CE1942F71A8C1A230052E41D /* LaunchScreen.xib in Resources */,
+				CE1942F21A8C0FC40052E41D /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,9 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1942CF1A8BFE480052E41D /* SecondViewController.m in Sources */,
-				CE1942C91A8BFE480052E41D /* AppDelegate.m in Sources */,
-				CE1942CC1A8BFE480052E41D /* FirstViewController.m in Sources */,
+				CE1942EF1A8C058F0052E41D /* AppDelegate.m in Sources */,
 				CE1942C61A8BFE480052E41D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,25 +244,6 @@
 			targetProxy = CE1942DD1A8BFE480052E41D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CE1942D01A8BFE480052E41D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE1942D11A8BFE480052E41D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CE1942D51A8BFE480052E41D /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE1942D61A8BFE480052E41D /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE1942E41A8BFE480052E41D /* Debug */ = {
@@ -420,6 +397,7 @@
 				CE1942E81A8BFE480052E41D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE1942E91A8BFE480052E41D /* Build configuration list for PBXNativeTarget "Vehicle RecorderTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +406,7 @@
 				CE1942EB1A8BFE480052E41D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

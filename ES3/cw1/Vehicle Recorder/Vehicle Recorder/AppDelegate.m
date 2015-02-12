@@ -8,12 +8,13 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
-
+@interface AppDelegate()
+//extension -> private class methods/fields/etc
 @end
 
 @implementation AppDelegate
 
+@synthesize window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
