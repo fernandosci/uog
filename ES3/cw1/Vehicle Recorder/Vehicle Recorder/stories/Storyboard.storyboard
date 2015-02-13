@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="-32" y="43"/>
         </scene>
-        <!--VehicleView-->
+        <!--ESFVehicleViewController-->
         <scene sceneID="NQB-mj-fvb">
             <objects>
-                <viewController title="Recorder" id="rCs-9h-sxf" userLabel="VehicleView" sceneMemberID="viewController">
+                <viewController title="Recorder" id="rCs-9h-sxf" userLabel="ESFVehicleViewController" customClass="ESFVehicleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6tR-NW-duI"/>
                         <viewControllerLayoutGuide type="bottom" id="sPv-NL-9ik"/>
@@ -58,10 +58,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GB" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ruS-Ca-rkl">
-                                <rect key="frame" x="183" y="55" width="61" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GB" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ruS-Ca-rkl">
+                                <rect key="frame" x="205" y="55" width="39" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                                <connections>
+                                    <outlet property="delegate" destination="rCs-9h-sxf" id="3cU-Eh-LDK"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LL88" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="6Jo-St-X1K">
                                 <rect key="frame" x="259" y="55" width="82" height="30"/>
@@ -69,15 +73,22 @@
                                     <constraint firstAttribute="height" constant="30" id="LKK-Nf-Wye"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="rCs-9h-sxf" id="4Nj-pK-7VC"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LLL" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="lTs-in-Fyq">
                                 <rect key="frame" x="356" y="55" width="67" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
                             </textField>
                             <pickerView contentMode="top" verticalHuggingPriority="350" translatesAutoresizingMaskIntoConstraints="NO" id="0qk-L4-y73">
                                 <rect key="frame" x="26" y="127" width="548" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rCs-9h-sxf" id="QkR-J1-wLV"/>
+                                    <outlet property="delegate" destination="rCs-9h-sxf" id="D13-30-vtR"/>
+                                </connections>
                             </pickerView>
                             <segmentedControl opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iJ5-yb-KQg">
                                 <rect key="frame" x="26" y="385" width="549" height="29"/>
@@ -112,6 +123,9 @@
                                 <state key="normal" title="Record">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonRecordTouchHandler:" destination="rCs-9h-sxf" eventType="touchUpInside" id="0NW-O1-lhU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -140,6 +154,14 @@
                     <tabBarItem key="tabBarItem" title="Recorder" id="eU0-ea-Lh9" userLabel="itemVehicleView"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="carTypeSegmentedControl" destination="y74-kb-aev" id="ucj-tV-hUn"/>
+                        <outlet property="colorSegmentedControl" destination="iJ5-yb-KQg" id="epO-wm-QQi"/>
+                        <outlet property="reg1TextField" destination="ruS-Ca-rkl" id="CvW-pn-B8t"/>
+                        <outlet property="reg2TextField" destination="6Jo-St-X1K" id="OT3-Cs-4et"/>
+                        <outlet property="reg3TextField" destination="lTs-in-Fyq" id="Wls-qL-6z0"/>
+                        <outlet property="vehiclePickerView" destination="0qk-L4-y73" id="pbA-CV-oLO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJq-E3-yZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

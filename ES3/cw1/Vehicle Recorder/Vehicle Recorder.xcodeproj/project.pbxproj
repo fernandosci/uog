@@ -13,6 +13,11 @@
 		CE1942EF1A8C058F0052E41D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1942EE1A8C058F0052E41D /* AppDelegate.m */; };
 		CE1942F21A8C0FC40052E41D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1942F11A8C0FC40052E41D /* Storyboard.storyboard */; };
 		CE1942F71A8C1A230052E41D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1942F61A8C1A230052E41D /* LaunchScreen.xib */; };
+		CE1942FD1A8C4C960052E41D /* ESFVehicleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1942FC1A8C4C960052E41D /* ESFVehicleViewController.m */; };
+		CECB49661A8CE72D006AEB42 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CECB49651A8CE72D006AEB42 /* libsqlite3.dylib */; };
+		CECB496D1A8CEE5D006AEB42 /* ESFVehicles.m in Sources */ = {isa = PBXBuildFile; fileRef = CECB496C1A8CEE5D006AEB42 /* ESFVehicles.m */; };
+		CECB49701A8CEEB6006AEB42 /* ESFVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = CECB496F1A8CEEB6006AEB42 /* ESFVehicle.m */; };
+		CECB49721A8D8C30006AEB42 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECB49711A8D8C30006AEB42 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,14 @@
 		CE1942EE1A8C058F0052E41D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Vehicle Recorder/AppDelegate.m"; sourceTree = "<group>"; };
 		CE1942F11A8C0FC40052E41D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		CE1942F61A8C1A230052E41D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		CE1942FB1A8C4C960052E41D /* ESFVehicleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFVehicleViewController.h; sourceTree = "<group>"; };
+		CE1942FC1A8C4C960052E41D /* ESFVehicleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFVehicleViewController.m; sourceTree = "<group>"; };
+		CECB49651A8CE72D006AEB42 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CECB496B1A8CEE5D006AEB42 /* ESFVehicles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFVehicles.h; sourceTree = "<group>"; };
+		CECB496C1A8CEE5D006AEB42 /* ESFVehicles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFVehicles.m; sourceTree = "<group>"; };
+		CECB496E1A8CEEB6006AEB42 /* ESFVehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFVehicle.h; sourceTree = "<group>"; };
+		CECB496F1A8CEEB6006AEB42 /* ESFVehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFVehicle.m; sourceTree = "<group>"; };
+		CECB49711A8D8C30006AEB42 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECB49721A8D8C30006AEB42 /* CoreLocation.framework in Frameworks */,
+				CECB49661A8CE72D006AEB42 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +75,8 @@
 		CE1942B71A8BFE480052E41D = {
 			isa = PBXGroup;
 			children = (
+				CECB49711A8D8C30006AEB42 /* CoreLocation.framework */,
+				CECB49651A8CE72D006AEB42 /* libsqlite3.dylib */,
 				CE1942ED1A8C058F0052E41D /* AppDelegate.h */,
 				CE1942EE1A8C058F0052E41D /* AppDelegate.m */,
 				CE1942C21A8BFE480052E41D /* Vehicle Recorder */,
@@ -80,6 +97,8 @@
 		CE1942C21A8BFE480052E41D /* Vehicle Recorder */ = {
 			isa = PBXGroup;
 			children = (
+				CECB49671A8CECE3006AEB42 /* model */,
+				CE1942FA1A8C4AD30052E41D /* Controllers */,
 				CE1942F01A8C0F0D0052E41D /* stories */,
 				CE1942D31A8BFE480052E41D /* Images.xcassets */,
 				CE1942C31A8BFE480052E41D /* Supporting Files */,
@@ -120,6 +139,27 @@
 				CE1942F61A8C1A230052E41D /* LaunchScreen.xib */,
 			);
 			path = stories;
+			sourceTree = "<group>";
+		};
+		CE1942FA1A8C4AD30052E41D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE1942FB1A8C4C960052E41D /* ESFVehicleViewController.h */,
+				CE1942FC1A8C4C960052E41D /* ESFVehicleViewController.m */,
+			);
+			name = Controllers;
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		CECB49671A8CECE3006AEB42 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CECB496B1A8CEE5D006AEB42 /* ESFVehicles.h */,
+				CECB496C1A8CEE5D006AEB42 /* ESFVehicles.m */,
+				CECB496E1A8CEEB6006AEB42 /* ESFVehicle.h */,
+				CECB496F1A8CEEB6006AEB42 /* ESFVehicle.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1942FD1A8C4C960052E41D /* ESFVehicleViewController.m in Sources */,
+				CECB496D1A8CEE5D006AEB42 /* ESFVehicles.m in Sources */,
 				CE1942EF1A8C058F0052E41D /* AppDelegate.m in Sources */,
+				CECB49701A8CEEB6006AEB42 /* ESFVehicle.m in Sources */,
 				CE1942C61A8BFE480052E41D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
