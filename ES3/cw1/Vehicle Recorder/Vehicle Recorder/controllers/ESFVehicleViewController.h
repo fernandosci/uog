@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "../model/ESFVehicle.h"
+#import "../model/ESFVehicles.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface ESFVehicleViewController : UIViewController <UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
@@ -27,6 +29,8 @@ numberOfRowsInComponent:(NSInteger)component;
 - (void)imagePickerController:(UIImagePickerController *)picker
 didFinishPickingMediaWithInfo:(NSDictionary *)info;
 
-@property (copy) NSMutableArray *vehicleModels;
+@property (readonly) NSMutableArray *vehicleModels;
+
+@property (readonly) CLLocationManager* locationManager;
 
 @end

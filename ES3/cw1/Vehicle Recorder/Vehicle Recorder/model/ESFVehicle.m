@@ -32,6 +32,7 @@
                             location:(CLLocation*)location
                                 date:(NSDate*)date {
     
+    
     if (self = [super init])
     {
         self.registration = registration;

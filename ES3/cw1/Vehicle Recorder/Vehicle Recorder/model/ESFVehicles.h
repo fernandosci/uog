@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ESFVehicle.h"
 
-@interface ESFVehicles : NSObject
+@interface ESFVehicles : NSObject{
+     NSMutableArray* vehicleList;
+    NSString *fullPathname;
+}
+
+@property (nonatomic,retain) NSMutableArray* vehicleList;
+@property (nonatomic,retain) NSString* fullPathname;
++ (id)sharedManager;
+
+- (void) addVehicle:(ESFVehicle*)vehicle;
 
 @end
