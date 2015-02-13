@@ -14,6 +14,8 @@
 @interface ESFVehicleListTableViewController : UITableViewController
 
 
+@property (strong, nonatomic) IBOutlet UITableView *vehicleListTableView;
+
 
 
 @end

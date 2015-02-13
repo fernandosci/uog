@@ -12,14 +12,14 @@
 
 @property (weak) ESFVehicles *vehiclesList;
 
-@property (strong, nonatomic) IBOutlet UITableView *vehicleListTableVIew;
+
 
 @end
 
 @implementation ESFVehicleListTableViewController
 
 @synthesize vehiclesList;
-@synthesize vehicleListTableVIew;
+@synthesize vehicleListTableView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -110,7 +110,7 @@
     ESFVehicleDetailsTableController *viewcontroller = (ESFVehicleDetailsTableController*) [segue destinationViewController];
     
     // Assume self.view is the table view
-    NSIndexPath *path = [self.vehicleListTableVIew indexPathForSelectedRow];
+    NSIndexPath *path = [vehicleListTableView indexPathForSelectedRow];
     
      ESFVehicle * vehicle = [vehiclesList.vehicleList objectAtIndex:[path row]];
     

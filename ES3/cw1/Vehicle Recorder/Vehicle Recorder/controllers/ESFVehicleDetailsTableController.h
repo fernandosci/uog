@@ -17,4 +17,18 @@
 
 - (void) setVehicle:(ESFVehicle*)vehicle;
 
+
+
+@property (weak, nonatomic) IBOutlet UITableViewCell *tableCellImage;
+
+
+@property (weak, nonatomic) IBOutlet UITableViewCell *tableCellInfo1;
+@property (weak, nonatomic) IBOutlet UITableViewCell *tableCellInfo2;
+@property (weak, nonatomic) IBOutlet UITableViewCell *tableCellInfo3;
+@property (weak, nonatomic) IBOutlet UITableViewCell *tableCellInfo4;
+@property (weak, nonatomic) IBOutlet UITableViewCell *tableCellInfo5;
+@property (weak, nonatomic) IBOutlet UITableViewCell *tableCellInfo6;
+
+
+
 @end

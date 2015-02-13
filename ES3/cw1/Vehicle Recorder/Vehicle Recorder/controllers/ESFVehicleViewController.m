@@ -188,7 +188,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info{
     vehicle.registration = [@[reg1TextField.text, reg2TextField.text, reg3TextField.text] componentsJoinedByString:nil];
     vehicle.make = [_vehicleModels objectAtIndex:[vehiclePickerView selectedRowInComponent:0]];
     vehicle.color = [colorSegmentedControl titleForSegmentAtIndex:colorSegmentedControl.selectedSegmentIndex];
-    vehicle.color = [carTypeSegmentedControl titleForSegmentAtIndex:carTypeSegmentedControl.selectedSegmentIndex];
+    vehicle.type = [carTypeSegmentedControl titleForSegmentAtIndex:carTypeSegmentedControl.selectedSegmentIndex];
     vehicle.image = fullfilename;
     if (_locationManager.location != nil){
         vehicle.location = _locationManager.location;

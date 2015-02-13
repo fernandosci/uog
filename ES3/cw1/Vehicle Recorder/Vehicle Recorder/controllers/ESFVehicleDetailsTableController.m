@@ -11,10 +11,11 @@
 @interface ESFVehicleDetailsTableController ()
 
 
-
 @end
 
 @implementation ESFVehicleDetailsTableController
+
+@synthesize tableCellImage;
 
 
 
@@ -58,41 +59,49 @@
     
     UITableViewCell *cell;
     
+    // UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"IDDetail" forIndexPath:indexPath];
+    
 //    if (cell == nil) {
 //        cell = [[UITableViewCell alloc] init];
 //    }
     if (indexPath.section == 0)
     {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"VehicleDetail" forIndexPath:indexPath];
+        
         
         switch (indexPath.row) {
             case 0:{
+                cell = _tableCellInfo1;
                 cell.textLabel.text = @"Registration";
                 cell.detailTextLabel.text = _vehicle.registration;
                 break;
             }
             case 1:{
+                cell = _tableCellInfo2;
                 cell.textLabel.text = @"Manufacturer";
                 cell.detailTextLabel.text = _vehicle.make;
                 break;
             }
             case 2:{
+                cell = _tableCellInfo3;
                 cell.textLabel.text = @"Color";
                 cell.detailTextLabel.text = _vehicle.color;
                 break;
             }
             case 3:{
+                cell = _tableCellInfo4;
                 cell.textLabel.text = @"Type";
                 cell.detailTextLabel.text = _vehicle.type;
                 break;
             }
                 
             case 4:{
+                cell = _tableCellInfo5;
                 cell.textLabel.text = @"Location";
                 cell.detailTextLabel.text = _vehicle.location.description;
                 break;
             }
             case 5:{
+                cell = _tableCellInfo6;
                 cell.textLabel.text = @"Date";
                 cell.detailTextLabel.text = _vehicle.date.description;
                 break;
@@ -103,13 +112,14 @@
     }
     else if (indexPath.section == 1)
     {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"VehicleImage" forIndexPath:indexPath];
+        cell = tableCellImage;
         
         NSData *retrievedData = [NSData dataWithContentsOfFile:_vehicle.image];
         
         cell.imageView.image = [UIImage imageWithData:retrievedData];
     }
-    
+   
+   
     return cell;
 }
 
