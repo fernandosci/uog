@@ -31,6 +31,6 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info;
 
 @property (readonly) NSMutableArray *vehicleModels;
 
-@property (readonly) CLLocationManager* locationManager;
+@property (strong, nonatomic) CLLocationManager * locationManager;
 
 @end

@@ -28,12 +28,12 @@
 
 
 - (ESFVehicle*) initWithRegistration:(NSString*)registration
-                    manufacturer:(NSString*)make
-                           color:(NSString*)color
-                            type:(NSString*)type
-                         picture:(NSString*)image
-                        location:(CLLocation*)location
-                            date:(NSDate*)date;
+                        manufacturer:(NSString*)make
+                               color:(NSString*)color
+                                type:(NSString*)type
+                             picture:(NSString*)image
+                            location:(CLLocation*)location
+                                date:(NSDate*)date;
 
 - (id)initWithCoder:(NSCoder *)decoder;
 

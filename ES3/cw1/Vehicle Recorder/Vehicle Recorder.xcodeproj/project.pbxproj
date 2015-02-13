@@ -11,7 +11,6 @@
 		CE1942D41A8BFE480052E41D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1942D31A8BFE480052E41D /* Images.xcassets */; };
 		CE1942E31A8BFE480052E41D /* Vehicle_RecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1942E21A8BFE480052E41D /* Vehicle_RecorderTests.m */; };
 		CE1942EF1A8C058F0052E41D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1942EE1A8C058F0052E41D /* AppDelegate.m */; };
-		CE1942F71A8C1A230052E41D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1942F61A8C1A230052E41D /* LaunchScreen.xib */; };
 		CE1942FD1A8C4C960052E41D /* ESFVehicleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1942FC1A8C4C960052E41D /* ESFVehicleViewController.m */; };
 		CE34D3B51A8DE9B20013850C /* ESFVehicleDetailsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34D3B41A8DE9B20013850C /* ESFVehicleDetailsTableController.m */; };
 		CE34D3B91A8DEBE30013850C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE34D3B71A8DEBE30013850C /* LaunchScreen.xib */; };
@@ -45,7 +44,6 @@
 		CE1942E21A8BFE480052E41D /* Vehicle_RecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vehicle_RecorderTests.m; sourceTree = "<group>"; };
 		CE1942ED1A8C058F0052E41D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Vehicle Recorder/AppDelegate.h"; sourceTree = "<group>"; };
 		CE1942EE1A8C058F0052E41D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Vehicle Recorder/AppDelegate.m"; sourceTree = "<group>"; };
-		CE1942F61A8C1A230052E41D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		CE1942FB1A8C4C960052E41D /* ESFVehicleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFVehicleViewController.h; sourceTree = "<group>"; };
 		CE1942FC1A8C4C960052E41D /* ESFVehicleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFVehicleViewController.m; sourceTree = "<group>"; };
 		CE34D3B31A8DE9B20013850C /* ESFVehicleDetailsTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFVehicleDetailsTableController.h; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				CE34D3B61A8DEBE30013850C /* stories */,
-				CE1942F61A8C1A230052E41D /* LaunchScreen.xib */,
 			);
 			path = stories;
 			sourceTree = "<group>";
@@ -275,7 +272,6 @@
 				CE1942D41A8BFE480052E41D /* Images.xcassets in Resources */,
 				CE34D3BA1A8DEBE30013850C /* Storyboard.storyboard in Resources */,
 				CE34D3B91A8DEBE30013850C /* LaunchScreen.xib in Resources */,
-				CE1942F71A8C1A230052E41D /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

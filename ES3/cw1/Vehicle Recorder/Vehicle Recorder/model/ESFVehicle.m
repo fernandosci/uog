@@ -42,7 +42,7 @@
         self.image = image;
         self.location = location;
         self.date = date;
-
+        
     }
     return self;
     

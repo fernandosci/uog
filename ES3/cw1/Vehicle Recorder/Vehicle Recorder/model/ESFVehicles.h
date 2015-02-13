@@ -10,7 +10,7 @@
 #import "ESFVehicle.h"
 
 @interface ESFVehicles : NSObject{
-     NSMutableArray* vehicleList;
+    NSMutableArray* vehicleList;
     NSString *fullPathname;
 }
 

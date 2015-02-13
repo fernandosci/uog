@@ -89,10 +89,9 @@
                        nil
                        ];
     
-   
     
-    _locationManager = [CLLocationManager new];
-    
+    _locationManager = [[CLLocationManager alloc] init];
+    _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     [_locationManager startUpdatingLocation];
     
 }
