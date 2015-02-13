@@ -114,9 +114,21 @@
     {
         cell = tableCellImage;
         
-        NSData *retrievedData = [NSData dataWithContentsOfFile:_vehicle.image];
         
-        cell.imageView.image = [UIImage imageWithData:retrievedData];
+        NSData *retrievedData = [NSKeyedUnarchiver unarchiveObjectWithFile:_vehicle.image];
+        UIImage * image = [UIImage imageWithData:retrievedData];
+        
+        CGRect screenRect = [[UIScreen mainScreen] bounds];
+        CGFloat screenWidth = screenRect.size.width;
+        
+        
+        //UIImageView *imv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, screenWidth, image.size.height)];
+       // imv.image= image;
+        //[cell.contentView addSubview:imv];
+        //[cell addSubview:imv];
+        
+        _tableCellImageView.image = image;
+        //cell.imageView.image = image;
     }
    
    

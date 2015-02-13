@@ -16,6 +16,8 @@
 		CE34D3B51A8DE9B20013850C /* ESFVehicleDetailsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34D3B41A8DE9B20013850C /* ESFVehicleDetailsTableController.m */; };
 		CE34D3B91A8DEBE30013850C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE34D3B71A8DEBE30013850C /* LaunchScreen.xib */; };
 		CE34D3BA1A8DEBE30013850C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE34D3B81A8DEBE30013850C /* Storyboard.storyboard */; };
+		CE34D3BD1A8E5CBE0013850C /* ESFMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34D3BC1A8E5CBE0013850C /* ESFMapViewController.m */; };
+		CE34D3BF1A8E5CD30013850C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE34D3BE1A8E5CD30013850C /* MapKit.framework */; };
 		CECB49661A8CE72D006AEB42 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CECB49651A8CE72D006AEB42 /* libsqlite3.dylib */; };
 		CECB49701A8CEEB6006AEB42 /* ESFVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = CECB496F1A8CEEB6006AEB42 /* ESFVehicle.m */; };
 		CECB49721A8D8C30006AEB42 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECB49711A8D8C30006AEB42 /* CoreLocation.framework */; };
@@ -50,6 +52,9 @@
 		CE34D3B41A8DE9B20013850C /* ESFVehicleDetailsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFVehicleDetailsTableController.m; sourceTree = "<group>"; };
 		CE34D3B71A8DEBE30013850C /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		CE34D3B81A8DEBE30013850C /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		CE34D3BB1A8E5CBE0013850C /* ESFMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFMapViewController.h; sourceTree = "<group>"; };
+		CE34D3BC1A8E5CBE0013850C /* ESFMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFMapViewController.m; sourceTree = "<group>"; };
+		CE34D3BE1A8E5CD30013850C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CECB49651A8CE72D006AEB42 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CECB496E1A8CEEB6006AEB42 /* ESFVehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFVehicle.h; sourceTree = "<group>"; };
 		CECB496F1A8CEEB6006AEB42 /* ESFVehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFVehicle.m; sourceTree = "<group>"; };
@@ -65,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE34D3BF1A8E5CD30013850C /* MapKit.framework in Frameworks */,
 				CECB49721A8D8C30006AEB42 /* CoreLocation.framework in Frameworks */,
 				CECB49661A8CE72D006AEB42 /* libsqlite3.dylib in Frameworks */,
 			);
@@ -83,6 +89,7 @@
 		CE1942B71A8BFE480052E41D = {
 			isa = PBXGroup;
 			children = (
+				CE34D3BE1A8E5CD30013850C /* MapKit.framework */,
 				CECB49711A8D8C30006AEB42 /* CoreLocation.framework */,
 				CECB49651A8CE72D006AEB42 /* libsqlite3.dylib */,
 				CE1942ED1A8C058F0052E41D /* AppDelegate.h */,
@@ -158,6 +165,8 @@
 				CECBCD5F1A8DE07E008959C5 /* ESFVehicleListTableViewController.m */,
 				CE34D3B31A8DE9B20013850C /* ESFVehicleDetailsTableController.h */,
 				CE34D3B41A8DE9B20013850C /* ESFVehicleDetailsTableController.m */,
+				CE34D3BB1A8E5CBE0013850C /* ESFMapViewController.h */,
+				CE34D3BC1A8E5CBE0013850C /* ESFMapViewController.m */,
 			);
 			name = Controllers;
 			path = controllers;
@@ -288,6 +297,7 @@
 				CE1942EF1A8C058F0052E41D /* AppDelegate.m in Sources */,
 				CECB49701A8CEEB6006AEB42 /* ESFVehicle.m in Sources */,
 				CECBCD601A8DE07E008959C5 /* ESFVehicleListTableViewController.m in Sources */,
+				CE34D3BD1A8E5CBE0013850C /* ESFMapViewController.m in Sources */,
 				CECBCD5A1A8DD8BC008959C5 /* ESFVehicles.m in Sources */,
 				CE34D3B51A8DE9B20013850C /* ESFVehicleDetailsTableController.m in Sources */,
 				CE1942C61A8BFE480052E41D /* main.m in Sources */,

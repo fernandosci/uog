@@ -20,6 +20,7 @@
 
 
 @property (weak, nonatomic) IBOutlet UITableViewCell *tableCellImage;
+@property (weak, nonatomic) IBOutlet UIImageView *tableCellImageView;
 
 
 @property (weak, nonatomic) IBOutlet UITableViewCell *tableCellInfo1;

@@ -19,7 +19,7 @@
 
 - (void) getPicture;
 
-- (void) recordData:(NSData*)imageData;
+- (void) recordData:(NSString*)imageDatafilepath;
 
 
 @end
@@ -168,12 +168,6 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info{
     
     NSData *imageData = UIImagePNGRepresentation(image);
     
-    [self recordData:imageData];
-    
-}
-
-
-- (void) recordData:(NSData*)imageData{
     
     NSArray *documents = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
                                                              NSUserDomainMask, YES);
@@ -181,7 +175,14 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info{
     NSString *randomName = [NSString stringWithFormat:@"/image-%X%X.png",arc4random(),arc4random()];
     NSString *fullfilename = [homeDirectory stringByAppendingString:randomName];
     
+    [NSKeyedArchiver archiveRootObject:imageData toFile:fullfilename];
     
+    [self recordData:fullfilename];
+    
+}
+
+
+- (void) recordData:(NSString*)imageDatafilepath{
     
     ESFVehicle *vehicle = [ESFVehicle new];
     
@@ -189,7 +190,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info{
     vehicle.make = [_vehicleModels objectAtIndex:[vehiclePickerView selectedRowInComponent:0]];
     vehicle.color = [colorSegmentedControl titleForSegmentAtIndex:colorSegmentedControl.selectedSegmentIndex];
     vehicle.type = [carTypeSegmentedControl titleForSegmentAtIndex:carTypeSegmentedControl.selectedSegmentIndex];
-    vehicle.image = fullfilename;
+    vehicle.image = imageDatafilepath;
     if (_locationManager.location != nil){
         vehicle.location = _locationManager.location;
     }   else{
@@ -199,9 +200,6 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info{
     
     ESFVehicles *vehiclesList = [ESFVehicles sharedManager];
     [vehiclesList addVehicle:vehicle];
-    
-    
-    [NSKeyedArchiver archiveRootObject:imageData toFile:fullfilename];
     
 }
 @end

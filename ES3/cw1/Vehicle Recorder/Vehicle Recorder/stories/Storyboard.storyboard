@@ -8,12 +8,15 @@
         <!--MapViewer-->
         <scene sceneID="RsW-8o-z35">
             <objects>
-                <viewController id="fhJ-Ag-h8e" userLabel="MapViewer" sceneMemberID="viewController">
+                <viewController id="fhJ-Ag-h8e" userLabel="MapViewer" customClass="ESFMapViewController" sceneMemberID="viewController">
                     <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="iIY-U3-89b">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </mapView>
-                    <tabBarItem key="tabBarItem" title="Item" id="vhv-Ki-bIO" userLabel="ItemMapViewer"/>
+                    <tabBarItem key="tabBarItem" title="Map" id="vhv-Ki-bIO" userLabel="ItemMapViewer"/>
+                    <connections>
+                        <outlet property="mapViewer" destination="iIY-U3-89b" id="Jnq-yR-YTF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFX-YH-tIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,8 +192,21 @@
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IDDetail" id="whC-Ib-rTK">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="whC-Ib-rTK" id="tj3-Kw-7td">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="whC-Ib-rTK" id="tj3-Kw-7td">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Auk-8w-ONV">
+                                                    <rect key="frame" x="0.0" y="18" width="600" height="360"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="360" id="C9t-zD-qUF"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Auk-8w-ONV" secondAttribute="trailing" id="WtY-kk-6IF"/>
+                                                <constraint firstItem="Auk-8w-ONV" firstAttribute="top" secondItem="tj3-Kw-7td" secondAttribute="topMargin" constant="10" id="aMH-6I-O2V"/>
+                                                <constraint firstItem="Auk-8w-ONV" firstAttribute="leading" secondItem="tj3-Kw-7td" secondAttribute="leading" id="cqS-tx-iMq"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -203,6 +219,7 @@
                     </tableView>
                     <connections>
                         <outlet property="tableCellImage" destination="whC-Ib-rTK" id="GT6-PT-CkE"/>
+                        <outlet property="tableCellImageView" destination="Auk-8w-ONV" id="6gN-Y7-ZOV"/>
                         <outlet property="tableCellInfo1" destination="8k1-kU-j3F" id="Igf-SJ-cYz"/>
                         <outlet property="tableCellInfo2" destination="r0q-vS-EDz" id="TtV-9w-Eos"/>
                         <outlet property="tableCellInfo3" destination="5Hr-i6-h2h" id="iSm-9Q-TC1"/>
